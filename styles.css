@@ -91,20 +91,23 @@ body {
   text-align: left;
   padding-top: 24px;
 }
+.top__btn-link {
+  width: 247px;
+  height: 66px;
+  margin-top: 48px;
+  margin-bottom: 156px;
+}
 .top__btn {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
-  margin-top: 48px;
-  margin-bottom: 156px;
-  width: 247px;
-  height: 66px;
   color: rgb(255, 255, 255);
   font-family: inherit;
   font-size: 24px;
   font-weight: 600;
   line-height: 142%;
+  padding: 16px 28px 16px 28px;
   transition: 0.5s;
 }
 .top__btn:hover {
@@ -183,7 +186,8 @@ body {
   gap: 32px;
   z-index: 2;
 }
-.content__card {
+
+.card {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -191,22 +195,14 @@ body {
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
 }
-.content__card-img {
+.card__img {
   width: 378px;
   height: 314px;
 }
-.content__card:hover {
+.card:hover {
   transform: scale(1.05);
 }
-.content__card-title {
-  margin-left: 32px;
-  margin-bottom: 36px;
-  color: rgb(32, 32, 39);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-}
-.content__btn-card {
+.card__btn {
   margin-left: 32px;
   border-radius: 53px;
   background: rgb(247, 247, 247);
@@ -217,4 +213,12 @@ body {
   line-height: 110%;
   width: 108px;
   height: 36px;
+}
+.card__title {
+  margin-left: 32px;
+  margin-bottom: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
 }/*# sourceMappingURL=styles.css.map */
