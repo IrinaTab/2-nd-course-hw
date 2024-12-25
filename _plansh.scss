@@ -1,0 +1,51 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 864px/2);
+        padding-right: calc(50% - 864px/2);
+    }
+    .top {
+        background-image: url(img/bg-star-big-green-mob.svg);
+        background-repeat: no-repeat;
+        background-position: left 865px top -90px;
+        &__img-star-smaller {
+            width: 21px;
+            height: 21px;
+            &-btm {
+                width: 18px;
+                height: 18px;
+                left: 773px;
+                top: 557px;
+            }
+        }
+        &__img-star-small {
+            width: 35px;
+            height: 35px;
+            &-btm {
+                width: 39px;
+                height: 41px;
+                left: 804px;
+                top: 580px;
+            }
+        }
+        &__img-star-big {
+            display: none;
+        }
+
+    }
+    .card {
+        &__img {
+            width: 250px;
+            height: 250px;
+        }
+        &__title {
+            margin-left: 12px;
+            margin-bottom: 26px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+    }
+    .content__img-star-big {
+        top: 846px;
+    }
+}

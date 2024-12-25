@@ -27,30 +27,26 @@ body {
     }
     &__img-star-smaller {
         position: absolute;
-        width: 35px;
-        height: 35px;
-        left: 156px;
-        top: 69px;
+        left: 11vw;
+        top: 5vw;
         &-btm {
             position: absolute;
             width: 37px;
             height: 37px;
-            left: 948px;
-            top: 538px;
+            left: 66vw;
+            top: 58%;
         }
     }
     &__img-star-small {
         position: absolute;
-        width: 57px;
-        height: 57px;
-        left: 63px;
-        top: 94px;
+        left: 4vw;
+        top: 7vw;
         &-btm {
             position: absolute;
             width: 83px;
             height: 83px;
-            left: 1013px;
-            top: 568px;        
+            left: 70vw;
+            top: 61%;        
         }
     }
     &__img-box-star-big {
@@ -61,12 +57,12 @@ body {
     }
     &__img-star-big {
         position: absolute;
-        width: 1074px;
-        height: 1130px;
-        left: 854px;
-        right: -488px;
-        top: -334px;
-        bottom: 5123px;  
+        // width: 1074px;
+        // height: 1130px;
+        left: 60vw;
+        // right: -488px;
+        top: -23vw;
+        // bottom: 5123px;  
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -83,6 +79,9 @@ body {
         letter-spacing: 0px;
         text-align: left;
         padding-top: 24px;
+        &_mob {
+            display: none;
+        }
     }
     &__btn-link {
         width: 247px;
@@ -112,7 +111,7 @@ body {
         }
     }
     &__animated-strip {
-        width: 3220px;
+        width: 100vw;
         max-height: 90px;
         margin-left: 0;
     }
@@ -122,9 +121,7 @@ body {
     &__img-star-big {
         position: absolute;
         z-index: 1;
-        width: 585px;
-        height: 585px;
-        left: 933px;
+        left: 65vw;
         top: 946px;
         transform: rotate(-6.77deg);
     }
@@ -177,6 +174,9 @@ body {
             gap: 32px;
             z-index: 2;
         }
+        &_mob {
+            display: none;
+        }
     }
 }
 .card {
@@ -205,7 +205,6 @@ body {
         width: 108px;
         height: 36px;
     }
-
     &__title {
         margin-left: 32px;
         margin-bottom: 36px;
@@ -215,3 +214,17 @@ body {
         line-height: 39px;
     }
 }
+.footer {
+    background: rgb(189, 237, 53);
+    padding-top: 61px;
+    padding-bottom: 60px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+@import "plansh";
+@import "mobile";
