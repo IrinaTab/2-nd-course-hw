@@ -11,6 +11,7 @@ img {
 }
 body {
     font-family: "Montserrat", sans-serif;
+    clip-path: inset(0 0 0 0);
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -57,12 +58,8 @@ body {
     }
     &__img-star-big {
         position: absolute;
-        // width: 1074px;
-        // height: 1130px;
         left: 60vw;
-        // right: -488px;
         top: -23vw;
-        // bottom: 5123px;  
     }
     &__title {
         color: rgb(32, 32, 39);

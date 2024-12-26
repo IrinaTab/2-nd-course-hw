@@ -13,6 +13,8 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .center {
