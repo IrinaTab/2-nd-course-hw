@@ -28,6 +28,9 @@ body {
 
 .top {
   background: rgb(225, 255, 143);
+  background-image: url(img/bg-star-big-green.svg);
+  background-repeat: no-repeat;
+  background-position: 60vw -23vw;
 }
 .top__img-box {
   display: flex;
@@ -56,18 +59,6 @@ body {
   height: 83px;
   left: 70vw;
   top: 61%;
-}
-.top__img-box-star-big {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.top__img-star-big {
-  position: absolute;
-  left: 60vw;
-  top: -23vw;
 }
 .top__title {
   color: rgb(32, 32, 39);
@@ -123,13 +114,10 @@ body {
 
 .content {
   background: rgb(32, 32, 39);
-}
-.content__img-star-big {
-  position: absolute;
-  z-index: 1;
-  left: 65vw;
-  top: 946px;
-  transform: rotate(-6.77deg);
+  background-image: url(img/bg-star-big-vector-yellow-tr.svg);
+  background-repeat: no-repeat;
+  background-position: 58vw 9%;
+  background-size: 720px;
 }
 .content__img-star-small {
   position: absolute;
@@ -367,7 +355,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 32px;
-    margin-top: 72px;
     padding-bottom: 50px;
   }
   .card__img {
