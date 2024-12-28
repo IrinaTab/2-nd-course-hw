@@ -10,32 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style='overflow-x:hidden;'>
+<body>
     <header class="top">
         <div class="top__img-box center">
             <div class="top__img-box-small-stars">
                 <img class="top__img-star-smaller" src="img/bg-star-small-vector.svg" alt="small star without color">
                 <img class="top__img-star-small" src="img/bg-star-small-green.svg" alt="small green star">
             </div>
-            <div class="top__img-box-star-big">
+            <!-- <div class="top__img-box-star-big">
                 <img class="top__img-star-big" src="img/bg-star-big-green.svg" alt="big green star">
-            </div>  
+            </div>   -->
             <div class="top__img-box-small-stars-btm">
                 <img class="top__img-star-smaller top__img-star-smaller-btm" src="img/bg-star-small-green.svg" alt="small green star">
                 <img class="top__img-star-small top__img-star-small-btm" src="img/bg-star-small-vector.svg" alt="small star without color">
             </div>
         </div>
-        <h1 class="top__title center">Добро пожаловать <br/>на мой сайт мини-игр</h1>
+        <h1 class="top__title center">Добро пожаловать <br/><span class="line-h">на мой сайт</span> мини-игр</h1>
         <p class="top__text center">Тебе предстоит пройти несколько увлекательных игр. <br/>Если готов, нажимай <span class="bold__text"> «Поехали!» </span>и <span class="bold__text"> приступай.</span></p>
+        <p class="top__text_mob center">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="bold__text"> «Поехали!» </span>и <span class="bold__text"> приступай.</span></p>
         <div class="top__btn-link center">
-            <a href="#about-games" class="top__btn">Поехали!</a>
+            <a class="top__btn" href="#about-games">Поехали!</a>
         </div>
         <div>
-                <img class="top__animated-strip" src="img/top-animation-strip.png" alt="animation-strip">
+            <img class="top__animated-strip" src="img/top-animation-strip.png" alt="animation-strip">
         </div>
     </header>
-    <section id="about-games" class="content center">
-        <img class="content__img-star-big" src="img/bg-star-big-vector-yellow.svg" alt="star">
+    <main id="about-games" class="content center">
+        <!-- <img class="content__img-star-big" src="img/bg-star-big-vector-yellow.svg" alt="star"> -->
         <img class="content__img-star-smaller" src="img/bg-star-small-vector-yellow.svg" alt="star">
         <img class="content__img-star-small" src="img/bg-star-small2-vector-yellow.svg" alt="star">
         <div class="content__text-wrapper">
@@ -93,6 +94,90 @@
                 </a>
             </div>
         </div>
-    </section>
+        <div class="content__cards-box_mob">
+            <h2 class="content__title">Мини-игры</h2>
+            <div class="content__cards-box2">
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game1.png" alt="game1">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Угадай число</h3>
+                            <p class="card__text">
+                                Попробуй угадать случайное число от 1 до 100.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game2.png" alt="game2">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Простая арифметика</h3>
+                            <p class="card__text">
+                                Попробуй решить простые арифметические задачи.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="content__cards-box2">
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game3.png" alt="game3">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Переверни текст</h3>
+                            <p class="card__text">
+                                Попробуй ввести текст, который будет перевернут.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game5.png" alt="game4">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Викторина</h3>
+                            <p class="card__text">
+                                Отвечай на вопросы викторины с вариантами ответов.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="content__cards-box2">
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game4.png" alt="game5">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Камень, ножницы, бумага</h3>
+                            <p class="card__text">
+                                Сыграй в популярную игру против компьютера.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="content__card-link">
+                    <article class="card">
+                        <img class="card__img" src="img/game6.png" alt="game6">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Генератор случайных цветов</h3>
+                            <p class="card__text">
+                                Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                            </p>
+                            <button class="card__btn_mob">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
 </body>
 </html>
