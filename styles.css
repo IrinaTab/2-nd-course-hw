@@ -96,7 +96,7 @@ body {
   font-weight: 600;
   line-height: 142%;
   padding: 16px 28px 16px 28px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .top__btn:hover {
   background-color: #fff;
@@ -410,6 +410,15 @@ body {
     text-align: center;
     margin-top: 32px;
     margin-bottom: 32px;
+    transition: 0.3s;
+  }
+  .card__btn_mob:hover {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
   }
   .footer {
     padding-top: 40px;

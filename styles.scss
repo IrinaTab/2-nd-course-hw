@@ -54,17 +54,6 @@ body {
             top: 61%;        
         }
     }
-    // &__img-box-star-big {
-    //     max-width: 100%;
-    //     height: auto;
-    //     position: relative;
-    //     object-fit: fill
-    // }
-    // &__img-star-big {
-    //     position: absolute;
-    //     left: 60vw;
-    //     top: -23vw;
-    // }
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -101,7 +90,7 @@ body {
         font-weight: 600;
         line-height: 142%;
         padding: 16px 28px 16px 28px;
-        transition: 0.5s;
+        transition: 0.3s;
         &:hover {
             background-color: #fff;
             box-sizing: border-box;
@@ -123,13 +112,6 @@ body {
     background-repeat: no-repeat;
     background-position: 58vw 9%;
     background-size: 720px;
-    // &__img-star-big {
-    //     position: absolute;
-    //     z-index: 1;
-    //     left: 65vw;
-    //     top: 946px;
-    //     transform: rotate(-6.77deg);
-    // }
     &__img-star-small {
         position: absolute;
         width: 55px;
@@ -231,5 +213,6 @@ body {
         text-align: center;
     }
 }
+
 @import "plansh";
 @import "mobile";
