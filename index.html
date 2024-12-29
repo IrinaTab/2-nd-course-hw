@@ -28,144 +28,230 @@
         <div class="top__btn-link center">
             <a class="top__btn" href="#about-games">Поехали!</a>
         </div>
-        <div>
-            <img class="top__animated-strip" src="img/top-animation-strip.png" alt="animation-strip">
+        <div class="top__animated-strip">
+            <p class="animated-strip">Викторина</p>
+            <p class="animated-strip">Угадай число</p>
+            <p class="animated-strip">Переверни текст</p>
+            <p class="animated-strip">Простая арифметика</p>
+            <p class="animated-strip">Камень, ножницы, бумага</p>
+            <p class="animated-strip">Генератор случайных цветов</p>
         </div>
     </header>
-    <main id="about-games" class="content center">
-        <img class="content__img-star-smaller" src="img/bg-star-small-vector-yellow.svg" alt="star">
-        <img class="content__img-star-small" src="img/bg-star-small2-vector-yellow.svg" alt="star">
-        <div class="content__text-wrapper">
-            <h2 class="content__title">Об играх</h2>
-            <p class="content__text">В моей коллекции представлено 6 игр на разные темы.<br/>Игры несложные — в них может поиграть каждый.
-                <br/>Все игры доступны для пользования.</p>
-        </div>
-        <section class="content__cards-box">
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
-                <article class="card">
-                        <img class="card__img" src="img/game1.png" alt="game1">
-                        <button class="card__btn">Игра № 1</button>
-                        <h3 class="card__title">Угадай число</h3>
-                </article>
-                </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game4.png" alt="game4">
-                        <button class="card__btn">Игра №4</button>
-                        <h3 class="card__title">Камень, <br/>ножницы, <br/>бумага</h3>
-                    </article>
-                </a>
+    <main id="about-games" class="content">
+        <div class="content__wrapper center">
+            <img class="content__img-star-smaller" src="img/bg-star-small-vector-yellow.svg" alt="star">
+            <img class="content__img-star-small" src="img/bg-star-small2-vector-yellow.svg" alt="star">
+            <div class="content__text-wrapper">
+                <h2 class="content__title">Об играх</h2>
+                <p class="content__text">В моей коллекции представлено 6 игр на разные темы.<br/>Игры несложные — в них может поиграть каждый.
+                    <br/>Все игры доступны для пользования.</p>
             </div>
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
+            <section class="content__cards-box">
+                <h3 class="title__none"></h3>
+                <div class="content__cards-box2">
+                    <a href="#guess-number" class="content__card-link">
                     <article class="card">
-                        <img class="card__img" src="img/game2.png" alt="game2">
-                        <button class="card__btn">Игра № 2</button>
-                        <h3 class="card__title">Простая <br/>арифметика</h3>
-                    </article>
-                </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game5.png" alt="game5">
-                        <button class="card__btn">Игра №5</button>
-                        <h3 class="card__title">Простая <br/>викторина</h3>
-                    </article>
-                </a>
-            </div>
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game3.png" alt="game3">
-                        <button class="card__btn">Игра №3</button>
-                        <h3 class="card__title">Переверни текст</h3>
-                    </article>
-                </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game6.png" alt="game6">
-                        <button class="card__btn">Игра №6</button>
-                        <h3 class="card__title">Генератор <br/>случайных <br/>цветов</h3>
-                    </article>
-                </a>
-            </div>
-        </section>
-        <section class="content__cards-box_mob">
-            <h2 class="content__title">Мини-игры</h2>
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game1.png" alt="game1">
-                        <div class="card__wrapper">
+                            <img class="card__img" src="img/game1.png" alt="game1">
+                            <div class="card__btn">Игра № 1</div>
                             <h3 class="card__title">Угадай число</h3>
-                            <p class="card__text">
+                    </article>
+                    </a>
+                    <a href="#stone-snip-paper" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game4.png" alt="game4">
+                            <div class="card__btn">Игра №4</div>
+                            <h3 class="card__title">Камень, <br/>ножницы, <br/>бумага</h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="content__cards-box2">
+                    <a href="#simple-arithmetic" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game2.png" alt="game2">
+                            <div class="card__btn">Игра № 2</div>
+                            <h3 class="card__title">Простая <br/>арифметика</h3>
+                        </article>
+                    </a>
+                    <a href="#quiz" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game5.png" alt="game5">
+                            <div class="card__btn">Игра №5</div>
+                            <h3 class="card__title">Простая <br/>викторина</h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="content__cards-box2">
+                    <a href="#turn-text" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game3.png" alt="game3">
+                            <div class="card__btn">Игра №3</div>
+                            <h3 class="card__title">Переверни текст</h3>
+                        </article>
+                    </a>
+                    <a href="#generator-colors" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game6.png" alt="game6">
+                            <div class="card__btn">Игра №6</div>
+                            <h3 class="card__title">Генератор <br/>случайных <br/>цветов</h3>
+                        </article>
+                    </a>
+                </div>
+            </section>
+            <section class="content__cards-box_mob">
+                <h2 class="content__title">Мини-игры</h2>
+                <div class="content__cards-box2">
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game1.png" alt="game1">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Угадай число</h3>
+                                <p class="card__text">
+                                    Попробуй угадать случайное число от 1 до 100.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game2.png" alt="game2">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Простая арифметика</h3>
+                                <p class="card__text">
+                                    Попробуй решить простые арифметические задачи.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="content__cards-box2">
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game3.png" alt="game3">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Переверни текст</h3>
+                                <p class="card__text">
+                                    Попробуй ввести текст, который будет перевернут.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game5.png" alt="game4">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Викторина</h3>
+                                <p class="card__text">
+                                    Отвечай на вопросы викторины с вариантами ответов.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="content__cards-box2">
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game4.png" alt="game5">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Камень, ножницы, бумага</h3>
+                                <p class="card__text">
+                                    Сыграй в популярную игру против компьютера.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="content__card-link">
+                        <article class="card">
+                            <img class="card__img" src="img/game6.png" alt="game6">
+                            <div class="card__wrapper">
+                                <h3 class="card__title">Генератор случайных цветов</h3>
+                                <p class="card__text">
+                                    Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                                </p>
+                                <div class="card__btn_mob">Играть!</div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="games">
+            <h3 class="title__none"></h3>
+            <div class="content__wrapper2 center">
+                <h2 class="games__title">Мини-игры</h2>
+                <a id="guess-number" href="#" class="card__link">
+                    <article class="card-game">
+                        <img class="card-game__img" src="img/game1.png" alt="game1">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Угадай число</h3>
+                            <p class="card-game__text">
                                 Попробуй угадать случайное число от 1 до 100.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game2.png" alt="game2">
-                        <div class="card__wrapper">
-                            <h3 class="card__title">Простая арифметика</h3>
-                            <p class="card__text">
+                <a id="simple-arithmetic" href="#" class="card__link">
+                    <article class="card-game-even">
+                        <img class="card-game__img" src="img/game2.png" alt="game2">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Простая арифметика</h3>
+                            <p class="card-game__text">
                                 Попробуй решить простые арифметические задачи.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
-            </div>
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game3.png" alt="game3">
-                        <div class="card__wrapper">
-                            <h3 class="card__title">Переверни текст</h3>
-                            <p class="card__text">
+                <a id="turn-text" href="#" class="card__link">
+                    <article class="card-game">
+                        <img class="card-game__img" src="img/game3.png" alt="game3">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Переверни текст</h3>
+                            <p class="card-game__text">
                                 Попробуй ввести текст, который будет перевернут.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game5.png" alt="game4">
-                        <div class="card__wrapper">
-                            <h3 class="card__title">Викторина</h3>
-                            <p class="card__text">
+                <a id="quiz" href="#" class="card__link">
+                    <article class="card-game-even">
+                        <img class="card-game__img" src="img/game5.png" alt="game4">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Викторина</h3>
+                            <p class="card-game__text">
                                 Отвечай на вопросы викторины с вариантами ответов.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
-            </div>
-            <div class="content__cards-box2">
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game4.png" alt="game5">
-                        <div class="card__wrapper">
-                            <h3 class="card__title">Камень, ножницы, бумага</h3>
-                            <p class="card__text">
+                <a id="stone-snip-paper" href="#" class="card__link">
+                    <article class="card-game">
+                        <img class="card-game__img" src="img/game4.png" alt="game5">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Камень, <br/>ножницы, <br/>бумага</h3>
+                            <p class="card-game__text">
                                 Сыграй в популярную игру против компьютера.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
-                <a href="#" class="content__card-link">
-                    <article class="card">
-                        <img class="card__img" src="img/game6.png" alt="game6">
-                        <div class="card__wrapper">
-                            <h3 class="card__title">Генератор случайных цветов</h3>
-                            <p class="card__text">
+                <a id="generator-colors" href="#" class="card__link">
+                    <article class="card-game-even">
+                        <img class="card-game__img" src="img/game6.png" alt="game6">
+                        <div class="card-game__wrapper">
+                            <h3 class="card-game__title">Генератор <br/>случайных <br/>цветов</h3>
+                            <p class="card-game__text">
                                 Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                             </p>
-                            <button class="card__btn_mob">Играть!</button>
+                            <button class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </a>
