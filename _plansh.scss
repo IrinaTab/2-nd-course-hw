@@ -34,8 +34,8 @@
     }
     .card {
         &__img {
-            width: 250px;
-            height: 250px;
+            max-width: 260px;
+            max-height: 250px;
         }
         &__title {
             margin-left: 12px;
