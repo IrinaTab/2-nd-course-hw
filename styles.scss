@@ -29,35 +29,6 @@ body {
     background-image: url(img/bg-star-big-green.svg);
     background-repeat: no-repeat;
     background-position: 60vw -23vw;
-
-    &__img-box {
-        display: flex;
-        padding-top: 37px;
-    }
-    &__img-star-smaller {
-        position: absolute;
-        left: 11vw;
-        top: 5vw;
-        &-btm {
-            position: absolute;
-            width: 37px;
-            height: 37px;
-            left: 66vw;
-            top: 58%;
-        }
-    }
-    &__img-star-small {
-        position: absolute;
-        left: 4vw;
-        top: 7vw;
-        &-btm {
-            position: absolute;
-            width: 83px;
-            height: 83px;
-            left: 70vw;
-            top: 61%;        
-        }
-    }
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -78,11 +49,14 @@ body {
         }
     }
     &__btn-link {
-        width: 247px;
         margin-top: 48px;
         margin-bottom: 156px;
     }
     &__btn {
+        display: block;
+        width: 247px;
+        height: 66px;
+        text-align: center;
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
@@ -112,6 +86,34 @@ body {
         overflow-x: hidden;
         white-space: nowrap;
         animation: scroll 10s linear infinite;
+    }
+}
+.imgs {
+    display: flex;
+    padding-top: 37px;
+    &__star_smaller {
+        position: absolute;
+        left: 11vw;
+        top: 5vw;
+        &-btm {
+            position: absolute;
+            width: 37px;
+            height: 37px;
+            left: 66vw;
+            top: 47%;
+        }
+    }
+    &__star_small {
+        position: absolute;
+        left: 4vw;
+        top: 7vw;
+        &-btm {
+            position: absolute;
+            width: 83px;
+            height: 83px;
+            left: 72vw;
+            top: 50%;        
+        }
     }
 }
 .animated-strip {
@@ -306,7 +308,7 @@ body {
         background: rgb(32, 32, 39);
         color: rgb(255, 255, 255);
         font-family: inherit;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;
