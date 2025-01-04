@@ -11,7 +11,6 @@ img {
 }
 body {
     font-family: "Montserrat", sans-serif;
-    clip-path: inset(0 0 0 0);
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -29,6 +28,8 @@ body {
     background-image: url(img/bg-star-big-green.svg);
     background-repeat: no-repeat;
     background-position: 60vw -23vw;
+    overflow-x: hidden;
+
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -79,13 +80,18 @@ body {
     }
     &__animated-strip {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 34px;
         background-color: #BCEC30;
-        max-width: 100vw;
+        width: 3220px;
         max-height: 90px;
         margin-left: 0;
-        overflow-x: hidden;
         white-space: nowrap;
         animation: scroll 10s linear infinite;
+        padding-left: 49px;
+        padding-right: 49px;
     }
 }
 .imgs {
@@ -100,7 +106,7 @@ body {
             width: 37px;
             height: 37px;
             left: 66vw;
-            top: 47%;
+            top: 538px;
         }
     }
     &__star_small {
@@ -112,7 +118,7 @@ body {
             width: 83px;
             height: 83px;
             left: 72vw;
-            top: 50%;        
+            top: 568px;        
         }
     }
 }
@@ -121,14 +127,12 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 36px;
-    padding: 17px 51px 17px 17px;
+    padding: 17px 69px 17px 1px;
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0.04em;
     text-decoration-skip-ink: none;
-
-
 }
 @keyframes scroll {
     from { transform: translateX(0); }

@@ -40,16 +40,22 @@ console.log("Результат деления: ", n);
 console.log("Количество итераций: ", num);
 
 // Задание 6
-let firstFriday = 0;
-while (firstFriday % 7 !== 3) {
+// Было:
+// let firstFriday = 0;
+// while (firstFriday % 7 !== 3) {
+//   firstFriday++;
+// }
+// let day = firstFriday;
+// while (day <= 31) {
+//   console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчёт.`);
+//   day += 7;
+// }
+// Стало:
+let firstFriday = 3;
+for (let day = firstFriday; day <= 31; day += 7) {
+  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчёт.`);
   firstFriday++;
 }
-let day = firstFriday;
-while (day <= 31) {
-  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчёт.`);
-  day += 7;
-}
-
 // Дополнительные задания
 // Задание 1
 let k =100;
