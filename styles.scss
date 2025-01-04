@@ -11,7 +11,6 @@ img {
 }
 body {
     font-family: "Montserrat", sans-serif;
-    clip-path: inset(0 0 0 0);
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -29,35 +28,8 @@ body {
     background-image: url(img/bg-star-big-green.svg);
     background-repeat: no-repeat;
     background-position: 60vw -23vw;
+    overflow-x: hidden;
 
-    &__img-box {
-        display: flex;
-        padding-top: 37px;
-    }
-    &__img-star-smaller {
-        position: absolute;
-        left: 11vw;
-        top: 5vw;
-        &-btm {
-            position: absolute;
-            width: 37px;
-            height: 37px;
-            left: 66vw;
-            top: 58%;
-        }
-    }
-    &__img-star-small {
-        position: absolute;
-        left: 4vw;
-        top: 7vw;
-        &-btm {
-            position: absolute;
-            width: 83px;
-            height: 83px;
-            left: 70vw;
-            top: 61%;        
-        }
-    }
     &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
@@ -78,11 +50,14 @@ body {
         }
     }
     &__btn-link {
-        width: 247px;
         margin-top: 48px;
         margin-bottom: 156px;
     }
     &__btn {
+        display: block;
+        width: 247px;
+        height: 66px;
+        text-align: center;
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
@@ -105,13 +80,46 @@ body {
     }
     &__animated-strip {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 34px;
         background-color: #BCEC30;
-        max-width: 100vw;
+        width: 3220px;
         max-height: 90px;
         margin-left: 0;
-        overflow-x: hidden;
         white-space: nowrap;
         animation: scroll 10s linear infinite;
+        padding-left: 49px;
+        padding-right: 49px;
+    }
+}
+.imgs {
+    display: flex;
+    padding-top: 37px;
+    &__star_smaller {
+        position: absolute;
+        left: 11vw;
+        top: 5vw;
+        &-btm {
+            position: absolute;
+            width: 37px;
+            height: 37px;
+            left: 66vw;
+            top: 538px;
+        }
+    }
+    &__star_small {
+        position: absolute;
+        left: 4vw;
+        top: 7vw;
+        &-btm {
+            position: absolute;
+            width: 83px;
+            height: 83px;
+            left: 72vw;
+            top: 568px;        
+        }
     }
 }
 .animated-strip {
@@ -119,14 +127,12 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 36px;
-    padding: 17px 51px 17px 17px;
+    padding: 17px 69px 17px 1px;
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0.04em;
     text-decoration-skip-ink: none;
-
-
 }
 @keyframes scroll {
     from { transform: translateX(0); }
@@ -306,7 +312,7 @@ body {
         background: rgb(32, 32, 39);
         color: rgb(255, 255, 255);
         font-family: inherit;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;

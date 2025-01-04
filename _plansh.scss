@@ -7,7 +7,9 @@
         background-image: url(img/bg-star-big-green-mob.svg);
         background-repeat: no-repeat;
         background-position: left 865px top -90px;
-        &__img-star-smaller {
+    }
+    .imgs {
+        &__star_smaller {
             width: 21px;
             height: 21px;
             &-btm {
@@ -17,7 +19,7 @@
                 top: 557px;
             }
         }
-        &__img-star-small {
+        &__star_small {
             width: 35px;
             height: 35px;
             &-btm {
@@ -27,10 +29,6 @@
                 top: 580px;
             }
         }
-        &__img-star-big {
-            display: none;
-        }
-
     }
     .card {
         &__img {
@@ -44,8 +42,5 @@
             font-weight: 700;
             line-height: 26px;
         }
-    }
-    .content__img-star-big {
-        top: 846px;
     }
 }
