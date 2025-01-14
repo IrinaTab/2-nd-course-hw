@@ -21,4 +21,3 @@ function playGame() {
 
     alert(`Молодец! Угадал! Моё число ${randomNumber}`);
 }
-// playGame();
