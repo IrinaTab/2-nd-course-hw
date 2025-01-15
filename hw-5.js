@@ -4,40 +4,40 @@ function min(a, b) {
    if (a > b) {
         return b;
    } else {
-        return a
+        return a;
    }
 }
-console.log(min(8, 4));
-console.log(min(6, 6));
+min(8, 4);
+min(6, 6);
 
 // Задание 2
 function evenNumber(c) {
 
       if (c % 2 === 0) {
-        console.log(`Число четное: ${c}`);
+        return `Число четное: ${c}`;
     } else {
-        console.log(`Число нечетное: ${c}`);
+        return `Число нечетное: ${c}`;
     }
 }
 evenNumber(5);
 evenNumber(4);
 
-// Задание 3
+// Задание 3.1
 function squareNumber(d) {
-    console.log(d * d); 
+    console.log(Number(d) ** 2); 
 }
 squareNumber(7);
 
+// Задание 3.2
 function squareNum(e) {
-    let result = e * e;
-    console.log(result);
+    return e ** 2;
 }
-squareNum(4);
+let result = squareNum(4);
 
 // Задание 4
 function askUserAge() {
 
-    let userAge = prompt('Сколько вам лет?');
+    let userAge = Number(prompt('Сколько вам лет?'));
 
     if (isNaN(userAge)) {
         alert('Вы ввели неправильное значение');
@@ -56,43 +56,39 @@ askUserAge();
 // Задание 5
 function number(a, b) {
 
-    let multy = a * b;
 
-    if (isNaN(multy)) {
-        console.log('Одно или оба значения не являются числом');
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
     } else {
-        console.log(`Произведение a и b равно ${multy}`);
+        return `Произведение a и b равно ${a * b}`;
     }
 }
 number(2, 3);
 number(2, 'true');
 
-// Задание 6
+// // Задание 6
 function askNumber() {
 
     let userNumber = prompt('Введите любое число');
-    let cub = userNumber ** 3;
 
     if (isNaN(userNumber)) {
-        console.log('Переданный параметр не является числом');
+        return 'Переданный параметр не является числом';
     } else {
-        console.log(`${userNumber} в кубе равняется ${cub}`)
+        return `${userNumber} в кубе равняется ${userNumber ** 3}`;
     }
 }
 askNumber();
 
 // Задание 7
-const p = 3.14159;
-
 function getArea() {
-    const p = 3.14159;
-    let area = p * this.radius ** 2;
+
+    let area = Math.PI * this.radius ** 2;
     
     console.log(`При радиусе ${this.radius}, Площадь круга равна ${area}`);
 };
 
 function getPerimeter() {
-    let perimeter = 2 * p * this.radius;
+    let perimeter = 2 * Math.PI * this.radius;
 
     console.log(`При радиусе ${this.radius}, Периметр круга равен ${perimeter}`);
 
