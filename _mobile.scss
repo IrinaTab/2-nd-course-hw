@@ -56,15 +56,17 @@
     }
     
     .imgs {
-        &__star_smaller {
-            &-btm {
-                left: 673px;
+        &__star {
+            &_smaller {
+                &-btm {
+                    left: 673px;
+                }
             }
-        }
-        &__star_small {
-            &-btm {
-                left: 690px;
-                top: 580px;        
+            &_small {
+                &-btm {
+                    left: 690px;
+                    top: 580px;        
+                }
             }
         }
     }
@@ -74,13 +76,7 @@
     }
     .content {
         background: rgb(32, 32, 39);
-        &__img-star-big {
-            display: none;
-        }
-        &__img-star-small {
-            display: none;
-        }
-        &__img-star-smaller {
+        &__img-star {
             display: none;
         }
         &__text-wrapper {

@@ -97,28 +97,27 @@ body {
 .imgs {
     display: flex;
     padding-top: 37px;
-    &__star_smaller {
+    &__star {
         position: absolute;
-        left: 11vw;
-        top: 5vw;
-        &-btm {
-            position: absolute;
-            width: 37px;
-            height: 37px;
-            left: 66vw;
-            top: 538px;
+        &_smaller {
+            left: 11vw;
+            top: 5vw;
+            &-btm {
+                width: 37px;
+                height: 37px;
+                left: 66vw;
+                top: 538px;
+            }
         }
-    }
-    &__star_small {
-        position: absolute;
-        left: 4vw;
-        top: 7vw;
-        &-btm {
-            position: absolute;
-            width: 83px;
-            height: 83px;
-            left: 72vw;
-            top: 568px;        
+        &_small {
+            left: 4vw;
+            top: 7vw;
+            &-btm {
+                width: 83px;
+                height: 83px;
+                left: 72vw;
+                top: 568px;        
+            }
         }
     }
 }
@@ -145,22 +144,22 @@ body {
     background-repeat: no-repeat;
     background-position: 58vw 2%;
     background-size: 720px;
-    &__img-star-small {
+    &__img-star {
         position: absolute;
-        width: 55px;
-        height: 55px;
-        left: 45px;
-        top: 1622px;
         transform: rotate(5.45deg);
-    }
-    &__img-star-smaller {
-        position: absolute;
-        width: 31px;
-        height: 31px;
-        left: 28px;
-        top: 1570px;
-        transform: rotate(5.45deg);
+        &-small {
+            width: 55px;
+            height: 55px;
+            left: 45px;
+            top: 1622px;
         }
+        &-smaller {
+            width: 31px;
+            height: 31px;
+            left: 28px;
+            top: 1570px;
+        }
+    }
     &__text-wrapper {
         display: flex;
         flex-direction: column;
@@ -253,7 +252,7 @@ body {
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
-        margin-bottom: 72px;
+        margin-bottom: 40px;
     }
 }
 .content__wrapper2 {
@@ -263,7 +262,7 @@ body {
 }
 
 .card-game {
-    max-height: 500px;
+    height: 500px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -272,7 +271,7 @@ body {
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
     &-even {
-        max-height: 500px;
+        height: 500px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -316,7 +315,6 @@ body {
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;
-        margin-bottom: 32px;
         transition: 0.3s;
         &:hover {
             background-color: #fff;
