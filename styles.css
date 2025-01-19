@@ -104,25 +104,24 @@ body {
   display: flex;
   padding-top: 37px;
 }
-.imgs__star_smaller {
+.imgs__star {
   position: absolute;
+}
+.imgs__star_smaller {
   left: 11vw;
   top: 5vw;
 }
 .imgs__star_smaller-btm {
-  position: absolute;
   width: 37px;
   height: 37px;
   left: 66vw;
   top: 538px;
 }
 .imgs__star_small {
-  position: absolute;
   left: 4vw;
   top: 7vw;
 }
 .imgs__star_small-btm {
-  position: absolute;
   width: 83px;
   height: 83px;
   left: 72vw;
@@ -158,21 +157,21 @@ body {
   background-position: 58vw 2%;
   background-size: 720px;
 }
-.content__img-star-small {
+.content__img-star {
   position: absolute;
+  transform: rotate(5.45deg);
+}
+.content__img-star-small {
   width: 55px;
   height: 55px;
   left: 45px;
   top: 1622px;
-  transform: rotate(5.45deg);
 }
 .content__img-star-smaller {
-  position: absolute;
   width: 31px;
   height: 31px;
   left: 28px;
   top: 1570px;
-  transform: rotate(5.45deg);
 }
 .content__text-wrapper {
   display: flex;
@@ -265,7 +264,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  margin-bottom: 72px;
+  margin-bottom: 40px;
 }
 
 .content__wrapper2 {
@@ -275,7 +274,7 @@ body {
 }
 
 .card-game {
-  max-height: 500px;
+  height: 500px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -285,7 +284,7 @@ body {
   background: rgb(255, 255, 255);
 }
 .card-game-even {
-  max-height: 500px;
+  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -329,7 +328,6 @@ body {
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
-  margin-bottom: 32px;
   transition: 0.3s;
 }
 .card-game__btn:hover {
@@ -384,6 +382,12 @@ body {
     left: 804px;
     top: 580px;
   }
+  .content__img-star-smaller {
+    left: 18px;
+  }
+  .content__img-star-small {
+    left: 25px;
+  }
   .card__img {
     max-width: 260px;
     max-height: 250px;
@@ -394,6 +398,15 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
+  }
+  .card-game {
+    height: 420px;
+  }
+  .card-game-even {
+    height: 420px;
+  }
+  .card-game__wrapper {
+    padding-top: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -466,13 +479,7 @@ body {
   .content {
     background: rgb(32, 32, 39);
   }
-  .content__img-star-big {
-    display: none;
-  }
-  .content__img-star-small {
-    display: none;
-  }
-  .content__img-star-smaller {
+  .content__img-star {
     display: none;
   }
   .content__text-wrapper {

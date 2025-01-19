@@ -9,25 +9,35 @@
         background-position: left 865px top -90px;
     }
     .imgs {
-        &__star_smaller {
-            width: 21px;
-            height: 21px;
-            &-btm {
-                width: 18px;
-                height: 18px;
-                left: 773px;
-                top: 557px;
+        &__star {
+            &_smaller {
+                width: 21px;
+                height: 21px;
+                &-btm {
+                    width: 18px;
+                    height: 18px;
+                    left: 773px;
+                    top: 557px;
+                }
+            }
+            &_small {
+                width: 35px;
+                height: 35px;
+                &-btm {
+                    width: 39px;
+                    height: 41px;
+                    left: 804px;
+                    top: 580px;
+                }
             }
         }
-        &__star_small {
-            width: 35px;
-            height: 35px;
-            &-btm {
-                width: 39px;
-                height: 41px;
-                left: 804px;
-                top: 580px;
-            }
+    }
+    .content__img-star {
+        &-smaller {
+            left: 18px;
+        }
+        &-small {
+            left: 25px;
         }
     }
     .card {
@@ -41,6 +51,15 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 26px;
+        }
+    }
+    .card-game {
+        height: 420px;
+        &-even {
+            height: 420px;
+        }
+        &__wrapper {
+            padding-top: 14px;
         }
     }
 }
