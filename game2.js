@@ -2,7 +2,7 @@ function playGameSimpleArithmetic() {
   let greeting = confirm('Привет, попробуй реши несколько моих задач.')
   if (greeting === false) {
     alert('Жаль(((');
-    
+
   } else {
     alert('Поехали...');
     playGame();
@@ -13,13 +13,16 @@ function getRundomNumb(min, max) {
 }
 
 function playGame() {
-  let randomNum1 = getRundomNumb(1, 11);
-  let randomNum2 = getRundomNumb(1, 11);
-  
-  let randomOpiraton  = Math.random() < 0.25 ? '+' : (Math.random() >= 0.5 && Math.random() <= 0.75 ? '-' : (Math.random() > 0.75 ? '*' : '/'));
+
+  let randomNum1 = getRundomNumb(1, 21);
+  let randomNum2 = getRundomNumb(1, 21);
+
+  let operators = ["+", "-", "*", "/"];
+  let randomIndex = Math.floor(Math.random() * 4);
+  const randomOpiraton = operators[randomIndex];
   let expression = `${randomNum1} ${randomOpiraton} ${randomNum2}`;
   console.log(expression);
-  
+
   let result;
   switch (randomOpiraton) {
     case '+':
@@ -32,34 +35,29 @@ function playGame() {
       result = randomNum1 * randomNum2;
       break;
     default:
-      result = randomNum1 / randomNum2;
+      result = Math.ceil(randomNum1 / randomNum2);
       break;
   }
   console.log(result);
-  
-function correctOp() {
-  do {
-    getRundomNumb(min, max);
-  } while (isNaN(result) || result % 1 !== 0) {
-    console.log(expression);
-  }
-}
 
   function getUserAnswer() {
     let userAnswer;
     do {
-      userAnswer = Number(prompt(`Реши простую арифметическую задачу ${expression}. Введи ответ:`));
-      
+      if (expression.includes('/')) {
+        userAnswer = Number(prompt(`Реши простую арифметическую задачу ${expression}. При делении округляй вверх до целого числа. Введи ответ:`));
+      } else {
+        userAnswer = Number(prompt(`Реши простую арифметическую задачу ${expression}. Введи ответ:`));
+      }
       if (isNaN(userAnswer)) {
         alert("Пожалуйста, введите число.");
       } else if (userAnswer === result) {
-          alert('Верно!');
-          break;
+        alert('Верно!');
+        break;
       } else {
-          alert('Нерно! Попробуй еще.');
+        alert('Нерно! Попробуй еще.');
       }
-  
-      } while (userAnswer !== result);
+
+    } while (userAnswer !== result);
   }
-getUserAnswer();  
+  getUserAnswer();
 }
