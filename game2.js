@@ -5,14 +5,14 @@ function playGameSimpleArithmetic() {
 
   } else {
     alert('Поехали...');
-    playGame();
+    playGame2();
   }
 }
 function getRundomNumb(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function playGame() {
+function playGame2() {
 
   let randomNum1 = getRundomNumb(1, 21);
   let randomNum2 = getRundomNumb(1, 21);

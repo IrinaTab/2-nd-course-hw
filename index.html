@@ -110,7 +110,7 @@
             <section class="content__cards-box_mob">
                 <h2 class="content__title">Мини-игры</h2>
                 <div class="content__cards-box2">
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game1.png" alt="game1">
                             <div class="card__wrapper">
@@ -122,7 +122,7 @@
                             </div>
                         </article>
                     </div>
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game2.png" alt="game2">
                             <div class="card__wrapper">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="content__cards-box2">
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game3.png" alt="game3">
                             <div class="card__wrapper">
@@ -144,11 +144,11 @@
                                 <p class="card__text">
                                     Попробуй ввести текст, который будет перевернут.
                                 </p>
-                                <div class="card__btn_mob">Играть!</div>
+                                <div onclick="turnTextOver()" class="card__btn_mob">Играть!</div>
                             </div>
                         </article>
                     </div>
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game5.png" alt="game4">
                             <div class="card__wrapper">
@@ -156,13 +156,13 @@
                                 <p class="card__text">
                                     Отвечай на вопросы викторины с вариантами ответов.
                                 </p>
-                                <div class="card__btn_mob">Играть!</div>
+                                <div onclick="gameQuiz()" class="card__btn_mob">Играть!</div>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="content__cards-box2">
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game4.png" alt="game5">
                             <div class="card__wrapper">
@@ -174,7 +174,7 @@
                             </div>
                         </article>
                     </div>
-                    <div href="#" class="content__card-link">
+                    <div class="content__card-link">
                         <article class="card">
                             <img class="card__img" src="img/game6.png" alt="game6">
                             <div class="card__wrapper">
@@ -193,7 +193,7 @@
             <h3 class="title__none"></h3>
             <div class="content__wrapper2 center">
                 <h2 class="games__title">Мини-игры</h2>
-                <div id="guess-number" href="#" class="card__link">
+                <div id="guess-number" class="card__link">
                     <article class="card-game">
                         <img class="card-game__img" src="img/game1.png" alt="game1">
                         <div class="card-game__wrapper">
@@ -205,7 +205,7 @@
                         </div>
                     </article>
                 </div>
-                <div id="simple-arithmetic" href="#" class="card__link">
+                <div id="simple-arithmetic" class="card__link">
                     <article class="card-game-even">
                         <img class="card-game__img" src="img/game2.png" alt="game2">
                         <div class="card-game__wrapper">
@@ -217,7 +217,7 @@
                         </div>
                     </article>
                 </div>
-                <div id="turn-text" href="#" class="card__link">
+                <div id="turn-text" class="card__link">
                     <article class="card-game">
                         <img class="card-game__img" src="img/game3.png" alt="game3">
                         <div class="card-game__wrapper">
@@ -225,11 +225,11 @@
                             <p class="card-game__text">
                                 Попробуй ввести текст, который будет перевернут.
                             </p>
-                            <button class="card-game__btn">Играть!</button>
+                            <button onclick="turnTextOver()" class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </div>
-                <div id="quiz" href="#" class="card__link">
+                <div id="quiz" class="card__link">
                     <article class="card-game-even">
                         <img class="card-game__img" src="img/game5.png" alt="game4">
                         <div class="card-game__wrapper">
@@ -237,11 +237,11 @@
                             <p class="card-game__text">
                                 Отвечай на вопросы викторины с вариантами ответов.
                             </p>
-                            <button class="card-game__btn">Играть!</button>
+                            <button onclick="gameQuiz()" class="card-game__btn">Играть!</button>
                         </div>
                     </article>
                 </div>
-                <div id="stone-snip-paper" href="#" class="card__link">
+                <div id="stone-snip-paper" class="card__link">
                     <article class="card-game">
                         <img class="card-game__img" src="img/game4.png" alt="game5">
                         <div class="card-game__wrapper">
@@ -253,7 +253,7 @@
                         </div>
                     </article>
                 </div>
-                <div id="generator-colors" href="#" class="card__link">
+                <div id="generator-colors" class="card__link">
                     <article class="card-game-even">
                         <img class="card-game__img" src="img/game6.png" alt="game6">
                         <div class="card-game__wrapper">
@@ -273,6 +273,8 @@
     </footer>
     <script src="game1.js"></script>
     <script src="game2.js"></script>
+    <script src="game3.js"></script>
+    <script src="game5.js"></script>
 </body>
 
 </html>
