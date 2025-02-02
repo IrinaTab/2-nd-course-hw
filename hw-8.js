@@ -65,11 +65,9 @@ function updateDate() {
   date = new Date(); 
 }
 setInterval(updateDate, 3000);
+clearInterval(updateDate);
 
-
-let time = deadline;
 const interval = setInterval(() => {
-   time -= 1;
    console.log(date);
 }, 3000);
 
