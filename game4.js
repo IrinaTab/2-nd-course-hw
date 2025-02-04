@@ -23,9 +23,9 @@ const rules = {
 
 function playGame4() {
     const mainArray = ["камень", "ножницы", "бумага"];
-    let userAnswer = prompt('Введи свой выбор: камень, ножницы или бумага');
+    let userAnswer = prompt('Введи свой выбор: камень, ножницы или бумага').toLowerCase();;
     let randomIndexOfMainArray = Math.floor(Math.random() * mainArray.length);
-    let compSelectionRandom = mainArray[randomIndexOfMainArray];
+    let compSelectionRandom = mainArray[randomIndexOfMainArray].toLowerCase();;
 
     function checkresults() {
         if (rules[userAnswer] === compSelectionRandom) {
@@ -34,7 +34,7 @@ function playGame4() {
         } else if (rules[compSelectionRandom] === userAnswer) {
             alert(`Мой выбор: ${compSelectionRandom}. Твой выбор: ${userAnswer}. Ты проиграл!`);
             return defeats++;
-        } else if (userAnswer.toLocaleLowerCase() === compSelectionRandom.toLocaleLowerCase()) {
+        } else if (userAnswer === compSelectionRandom) {
             alert(`Мой выбор: ${compSelectionRandom}. Твой выбор: ${userAnswer}. Ничья!`);
         } else {
             alert(`Ты ввел слово некоррктно! Попробуй снова`);

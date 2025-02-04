@@ -64,8 +64,13 @@ let date = new Date();
 function updateDate() {
   date = new Date(); 
 }
-setInterval(updateDate, 3000);
-clearInterval(updateDate);
+const dateUpdate = setInterval(() => {
+    updateDate();
+}, 3000);
+
+setTimeout(() => {
+    clearInterval(dateUpdate);
+}, deadline * 1000);
 
 const interval = setInterval(() => {
    console.log(date);
