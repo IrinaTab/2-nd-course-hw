@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST JavaScript</title>
+    <style>
+        .titleTask {
+            color: red;
+            font-weight: bold;
+        }
+        .descTask {
+            font-style: italic;
+            color: rgb(170, 10, 170);
+        }
+        .titleDispNone {
+            display: none;
+        }
+        .task1, .task2, .task3, .task4, .task5, .task6, .task7 {
+            border: 1px solid green;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .newText {
+            font-weight: bold;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="task1">
+        <h2 class="titleTask">Задание №1: Скрытие и показ текста</h2>
+        <p class="descTask">Задача: Создайте кнопку, которая будет скрывать и показывать текст в заголовке 'h1'. <br>
+            Как должно работать: нажатие на кнопку «Скрыть» скрывает текст заголовка. Повторное нажатие показывает текст снова.
+        </p>
+        
+        <h1 class="title">Мой Заголовок</h1>
+        <button class="btn">Скрыть</button>
+    </div>
+
+    <div class="task2">
+        <h2 class="titleTask">Задание №2: Изменение стиля элемента</h2>
+        <p class="descTask">Задача: Создайте кнопку, которая изменяет цвет текста в элементе 'p'. <br> 
+            Как должно работать: нажатие на кнопку «Изменить цвет» делает текст абзаца синим.
+        </p>
+        
+        <p class="task2Text">Этот текст для демонстрации работы кнопки по изменению цвета</p>
+        <button class="task2Btn">Изменить цвет</button>
+    </div>
+
+    <div class="task3">
+        <h2 class="titleTask">Задание №3: Динамическое изменение текста</h2>
+        <p class="descTask">Задача: Создайте кнопку, которая меняет текст в заголовке 'h1'. <br> 
+            Как должно работать: нажатие на кнопку «Изменить текст» меняет текст заголовка на «Привет, мир!».
+        </p>
+        
+        <h1 class="task3Title">Мой Заголовок h1</h1> 
+        <!-- знаю, что заголовок h1 должен быть один на странице. Нарушаю правила в рамках Д/З))) -->
+        <button class="task3Btn">Изменить текст</button>
+    </div>
+
+    <div class="task4">
+        <h2 class="titleTask">Задание №4: Поиск и изменение элементов по классу</h2>
+        <p class="descTask">Задача: Найдите все элементы с классом 'description' и измените их текст на «Измененный текст».<br>
+            Как должно работать: после выполнения скрипта все элементы с классом description изменяют свой текст на «Измененный текст».
+        </p>
+        
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="description">Lorem, ipsum dolor.</p>
+        <p class="description">Lorem ipsum dolor sit amet.</p>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id!</p>
+
+    </div>
+
+    <div class="task5">
+        <h2 class="titleTask">Задание №5: Работа с querySelectorAll</h2>
+        <p class="descTask">Задача: Создайте несколько элементов 'p' с разными классами. Используйте querySelectorAll, чтобы найти все элементы с классом 
+            description и изменить их текст. <br> Как должно работать: после выполнения скрипта все элементы с классом description изменяют свой текст на «Новый текст».
+        </p>
+        
+        <p class="descriptionTask5">Lorem, ipsum.</p>
+        <p class="descTask5">Lorem, ipsum dolor.</p>
+        <p class="descTask5">Lorem ipsum dolor sit.</p>
+        <p class="descriptionTask5">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="task6">
+        <h2 class="titleTask">Задание №6: Добавление нового элемента в DOM</h2>
+        <p class="descTask">Задача: Создайте кнопку, которая добавляет новый элемент 'p' с текстом в конец документа. <br>
+            Как должно работать: нажатие на кнопку «Добавить элемент» добавляет в конец страницы новый абзац с текстом «Новый абзац».
+        </p>
+        <div class="newParagraph">
+            <p class="descriptionTask6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores sint dignissimos ab necessitatibus iusto omnis, sapiente voluptate fugit a?</p>
+        </div>
+
+        <button class="task6Btn">Добавить элемент</button>
+    </div>
+
+    <div class="task7">
+        <h2 class="titleTask">Задание №7: Удаление элемента</h2>
+        <p class="descTask">Задача: Создайте кнопку, которая удаляет первый элемент 'p' с классом description. <br>
+            Как должно работать: нажатие на кнопку «Удалить элемент» удаляет первый абзац с классом description со страницы.
+        </p>
+        <p class="descriptionTask7">Первый абзац</p>
+        <p class="descTask7">Второй абзац</p>
+        <p class="descTask7">Третий абзац</p>
+        <p class="descriptionTask7">Четвертый абзац</p>
+        <p class="descriptionTask7">Пятый абзац</p>
+
+        <button class="task7Btn">Удалить элемент</button>
+    </div>
+
+
+    <script>
+        const titleEl = document.querySelector('.title');
+        const btnEl = document.querySelector('.btn');
+
+        btnEl.addEventListener('click', function () {
+                titleEl.classList.toggle('titleDispNone');
+        });
+        
+
+        const task2TextEl = document.querySelector('.task2Text');
+        const task2BtnEl = document.querySelector('.task2Btn');
+        
+        task2BtnEl.addEventListener('click', () => {
+            task2TextEl.style.color = 'blue';
+        })
+
+        const task3TitleEl = document.querySelector('.task3Title');
+        const task3BtnEl = document.querySelector('.task3Btn');
+        task3BtnEl.addEventListener('click', () => {
+            task3TitleEl.textContent = 'Привет, мир!';
+        })
+
+        const descriptionEl = document.querySelectorAll('.description');
+        const task4BtnEl = document.querySelector('.task4Btn');
+        
+        descriptionEl.forEach(element => {
+                element.textContent = 'Измененный текст';
+            });
+
+        const descriptionTask5El = document.querySelectorAll('.descriptionTask5');
+        const task5BtnEl = document.querySelector('.task5Btn');
+
+            descriptionTask5El.forEach(element => {
+                element.textContent = 'Измененный текст задания 5';
+            });
+
+        const newParagraphEl = document.querySelector('.newParagraph')
+        const task6BtnEl = document.querySelector('.task6Btn');
+        
+        task6BtnEl.addEventListener('click', () => {
+            const task6TextEl = document.createElement('p');
+            task6TextEl.textContent = 'Новый абзац';
+            task6TextEl.classList.add('newText');
+            newParagraphEl.append(task6TextEl);
+        });
+
+        const descriptionTask7El = document.querySelector('.descriptionTask7');
+        const task7BtnEl = document.querySelector('.task7Btn');
+
+        task7BtnEl.addEventListener('click', () => {
+            descriptionTask7El.remove();
+        } )
+
+
+
+    </script>
+</body>
+
+</html>
