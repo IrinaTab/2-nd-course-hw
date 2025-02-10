@@ -182,7 +182,11 @@
                                 <p class="card__text">
                                     Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                                 </p>
-                                <div class="card__btn_mob">Играть!</div>
+                                <div onclick="gameRandomColors()" class="card__btn_mob">Играть!</div>
+                                <div class="windowColorsMob">
+                                    <button class="btn__changeColorsMob">Изменить цвет</button>
+                                    <button class="btn__changeColorsMob btn__changeColorsMob_end">End</button>
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -261,7 +265,11 @@
                             <p class="card-game__text">
                                 Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                             </p>
-                            <button class="card-game__btn">Играть!</button>
+                            <button onclick="gameRandomColors()" class="card-game__btn btn_click">Играть!</button>
+                            <div class="windowColors">
+                                <button class="btn__changeColors">Изменить цвет</button>
+                                <button class="btn__changeColors btn__changeColors_end">End</button>
+                            </div> 
                         </div>
                     </article>
                 </div>
@@ -276,6 +284,7 @@
     <script src="game3.js"></script>
     <script src="game4.js"></script>
     <script src="game5.js"></script>
+    <script src="game6.js"></script>
 </body>
 
 </html>

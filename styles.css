@@ -339,6 +339,40 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.windowColors, .windowColorsMob {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  border: 3px solid black;
+  width: 180px;
+  height: 180px;
+}
+
+.viewWindowColors, .viewWindowColorsMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn__changeColors, .btn__changeColorsMob {
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  padding: 6px;
+  font-family: inherit;
+}
+.btn__changeColors:active, .btn__changeColorsMob:active {
+  background-color: randomColor;
+}
+.btn__changeColors:hover, .btn__changeColorsMob:hover {
+  cursor: pointer;
+}
+.btn__changeColors:hover, .btn__changeColorsMob:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
 .footer {
   background: rgb(189, 237, 53);
   padding-top: 61px;
