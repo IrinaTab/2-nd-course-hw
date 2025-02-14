@@ -27,46 +27,22 @@ const quiz = [
 ];
 
 function playGame5() {
-    let correctAnswersCount = [];
+    let correctAnswersCount = 0;
 
-    function firstQuestion() {
-        let userAnswerFirstQuestion = Number(prompt(`Вопрос: ${quiz[0].question} Варианты ответа: ${quiz[0].options}. Введите номер варианта ответа:`));
+    for(let i = 0; i< quiz.length; i++){
+        let userAnswerSecondQuestion = Number(prompt(`Вопрос: ${quiz[i].question} Варианты ответа: ${quiz[i].options}. Введите номер варианта ответа:`));
 
-        if (userAnswerFirstQuestion === quiz[0].correctAnswer) {
+        if (userAnswerSecondQuestion === quiz[i].correctAnswer) {
             alert("Правильный ответ!");
-            correctAnswersCount.push(1);
+            correctAnswersCount++;
+
         } else {
             alert("Неправильный ответ.");
         }
     }
-    firstQuestion();
+    
+    alert(`Всего правильных ответов: ${correctAnswersCount}`);
 
-    function secondQuestion() {
-        let userAnswerSecondQuestion = Number(prompt(`Вопрос: ${quiz[1].question} Варианты ответа: ${quiz[1].options}. Введите номер варианта ответа:`));
-
-        if (userAnswerSecondQuestion === quiz[1].correctAnswer) {
-            alert("Правильный ответ!");
-            correctAnswersCount.push(1);
-        } else {
-            alert("Неправильный ответ.");
-        }
-
-    }
-    secondQuestion();
-
-    function thirdQuestion() {
-        let userAnswerThirdQuestion = Number(prompt(`Вопрос: ${quiz[2].question} Варианты ответа: ${quiz[2].options}. Введите номер варианта ответа:`));
-
-        if (userAnswerThirdQuestion === quiz[2].correctAnswer) {
-            alert("Правильный ответ!");
-            correctAnswersCount.push(1);
-        } else {
-            alert("Неправильный ответ.");
-        }
-    }
-    thirdQuestion();
-    let sum = correctAnswersCount.reduce((a, b) => a + b, 0);
-    alert(`Всего правильных ответов: ${sum}`);
 }
 
 

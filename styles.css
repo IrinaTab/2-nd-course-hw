@@ -85,16 +85,18 @@ body {
   color: rgb(0, 0, 0);
 }
 .top__animated-strip {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 34px;
   background-color: #BCEC30;
   width: 3220px;
   max-height: 90px;
   margin-left: 0;
   white-space: nowrap;
+}
+.top__animated-strip_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 34px;
   animation: scroll 10s linear infinite;
   padding-left: 49px;
   padding-right: 49px;
@@ -283,7 +285,7 @@ body {
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
 }
-.card-game-even {
+.card-game__even {
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -294,7 +296,7 @@ body {
   background: rgb(255, 255, 255);
 }
 .card-game__img {
-  width: 50%;
+  width: 600px;
 }
 .card-game__wrapper {
   display: flex;
@@ -311,7 +313,7 @@ body {
 }
 .card-game__text {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   color: #202027;
 }
@@ -337,6 +339,40 @@ body {
   border-radius: 60px;
   cursor: pointer;
   color: rgb(0, 0, 0);
+}
+
+.windowColors, .windowColorsMob {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  border: 3px solid black;
+  width: 180px;
+  height: 180px;
+}
+
+.viewWindowColors, .viewWindowColorsMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn__changeColors, .btn__changeColorsMob {
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  padding: 6px;
+  font-family: inherit;
+}
+.btn__changeColors:active, .btn__changeColorsMob:active {
+  background-color: randomColor;
+}
+.btn__changeColors:hover, .btn__changeColorsMob:hover {
+  cursor: pointer;
+}
+.btn__changeColors:hover, .btn__changeColorsMob:hover {
+  transform: scale(1.05);
+  font-weight: bold;
 }
 
 .footer {
@@ -402,7 +438,7 @@ body {
   .card-game {
     height: 420px;
   }
-  .card-game-even {
+  .card-game__even {
     height: 420px;
   }
   .card-game__wrapper {
