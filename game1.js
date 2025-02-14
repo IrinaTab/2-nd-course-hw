@@ -1,10 +1,12 @@
 function playGameGuessNumber() {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     console.log(randomNumber);
-
+    
+    let counter = 0;
     let userAnswer;
     do {
         userAnswer = parseInt(prompt("Попробуй угадать случайное число от 1 до 100"));
+        counter++;
 
         if (isNaN(userAnswer)) {
             alert("Пожалуйста, введите число.");
@@ -17,7 +19,7 @@ function playGameGuessNumber() {
                 alert('Не угадал. Моё число больше, попробуй ещё.');
             }
         }
-    } while (userAnswer !== randomNumber);
+    } while (userAnswer !== randomNumber) 
 
-    alert(`Молодец! Угадал! Моё число ${randomNumber}`);
+    alert(`Молодец! Угадал за ${counter} попыток! Моё число ${randomNumber}`);
 }

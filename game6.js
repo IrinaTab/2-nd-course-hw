@@ -9,6 +9,15 @@ function gameRandomColors() {
         playGame6Mob();
     }
 }
+// Функция для генерации случайного цвета
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}   
 
 function playGame6() {
     const windowColorsEl = document.querySelector('.windowColors');
@@ -21,22 +30,11 @@ function playGame6() {
 
     const btnChangeColorsEndEl = document.querySelector('.btn__changeColors_end');
 
-    // Функция для генерации случайного цвета
-    function getRandomColor() {
-        let letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }   
     btnChangeColorsEl.addEventListener('click', () => {
         viewWindowColorsEl.style.backgroundColor = getRandomColor();
     });
 
-    
     btnChangeColorsEndEl.addEventListener('click', () => {
-        playGame6() === false;
         windowColorsEl.classList.remove('viewWindowColors');
     });
 
@@ -53,22 +51,11 @@ function playGame6Mob() {
 
     const btnChangeColorsMobEndEl = document.querySelector('.btn__changeColorsMob_end');
 
-    // Функция для генерации случайного цвета
-    function getRandomColor() {
-        let letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }   
     btnChangeColorsMobEl.addEventListener('click', () => {
         viewWindowColorsMobEl.style.backgroundColor = getRandomColor();
     });
 
-    
     btnChangeColorsMobEndEl.addEventListener('click', () => {
-        playGame6Mob() === false;
         windowColorsMobEl.classList.remove('viewWindowColorsMob');
     });
 
